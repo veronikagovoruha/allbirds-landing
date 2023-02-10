@@ -1,0 +1,22 @@
+.btn-ligth{
+    @include fonts(normal, 700, 16px, 1.14);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #212A2F;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    
+}
+
+.btn-dark{
+    @include fonts(normal, 700, 16px, 1.14);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: #212A2F;
+    border: 2px solid #212A2F;
+    border-radius: 2px;
+    padding: 16px 45px;
+}

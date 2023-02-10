@@ -14,6 +14,9 @@
 <body>
 <header class="header">
     <div class="header__container container">
+        <div class="header__burger">
+            <span></span>
+        </div>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="">Men</a></li>
@@ -59,13 +62,13 @@
         </div>
     </div>
 </header>
-<!-- <main>
+<main>
 <section class="hero">
     <div class="hero__container">
         <picture>
             <source srcset="./image/hero/hero-desktop@1x.jpg 1x, ./image/hero/hero-desktop@2x.jpg 2x" media="(min-width: 1440px)">
             <source srcset="./image/hero/hero-tablet@1x.jpg 1x, ./image/hero/hero-tablet@2x.jpg 2x" media="(min-width: 834px)">
-            <source srcset="./image/hero/hero-mobile@1x.jpg 1x ./image/hero/hero-mobile@2x.jpg 2x" media="(min-width: 375px)">
+            <source srcset="./image/hero/hero-mobile@1x.jpg 1x, ./image/hero/hero-mobile@2x.jpg 2x" media="(min-width: 320px)">
             <img class="hero__image" src="./image/hero/hero-desktop@1x.jpg" alt="">
         </picture>
 
@@ -73,77 +76,182 @@
             <h1 class="hero__title">The Trail Runner SWT Is Here.</h1>
             <p class="hero__subtitle">Durable. Comfortable. Ready to get dirty.</p>
             <div class="hero__wrapper__link">
-                <a class="hero__link" href="">Shop Men</a>
-                <a class="hero__link" href="">Shop Women</a>
+                <a class="hero__link btn-ligth" href="">Shop Men</a>
+                <a class="hero__link btn-ligth" href="">Shop Women</a>
             </div>
         </div>
     </div>
 </section>
 <section class="favorites">
-    <div class="favorites__container">
-        <h2 class="favorites__title">Our Favorites</h2>
-        <ul class="favorites__list">
-            <li class="favorites__item">
-                <a class="favorites__title" href="">Everyday</a>
-                <ul class="slider__list">
-                    <li class="slider__item">
-                        <picture>
-                            <source srcset="./image/favorites/favorites-desktop-1@1x.jpg 1x, ./image/favorites/favorites-desktop-1@2x.jpg 2x" media="(min-width: 1440px)">
-                            <source srcset="./image/favorites/favorites-tablet-1@1x.jpg 1x, ./image/favorites/favorites-tablet-1@2x.jpg 2x" media="(min-width: 834px)">
-                            <source srcset="./image/favorites/favorites-mobile-1@1x.jpg 1x, ./image/favorites/favorites-mobile-1@2x.jpg 2x" media="(min-width: 375px)">
-                            <img class="slider__image" src="./image/favorites/favorites-desktop-1@1x.jpg" alt="Wool Runner">
-                        </picture>
-                        <h3 class="slider__title">Wool Runner</h3>
-                        <div class="slider__wrapper">
-                            <img src="./image/favorites/cloud.jpg" alt="cloud">
-                            <p class="slider__text">Cozy Sneaker</p>
-                        </div>
-                        <div class="slider__wrapper__link">
-                            <a class="slider__link" href="">Shop Men</a>
-                            <a class="slider__link" href="">Shop Women</a>
-                        </div>
-                    </li>
-                    <li class="slider__item">
-                        <picture>
-                            <source srcset="./image/favorites/favorites-desktop-2@1x.jpg 1x, ./image/favorites/favorites-desktop-2@2x.jpg 2x" media="(min-width: 1440px)">
-                            <source srcset="./image/favorites/favorites-tablet-2@1x.jpg 1x, ./image/favorites/favorites-tablet-2@2x.jpg 2x" media="(min-width: 834px)">
-                            <source srcset="./image/favorites/favorites-mobile-2@1x.jpg 1x, ./image/favorites/favorites-mobile-2@2x.jpg 2x" media="(min-width: 375px)">
-                            <img class="slider__image" src="./image/favorites/favorites-desktop-2@1x.jpg" alt="Tree Runner">
-                        </picture>
-                        <h3 class="slider__title">Tree Runner</h3>
-                        <div class="slider__wrapper">
-                            <img src="./image/favorites/leave.jpg" alt="leave">
-                            <p class="slider__text">Light and Breezy Sneaker</p>
-                        </div>
-                        <div class="slider__wrapper__link">
-                            <a class="slider__link" href="">Shop Men</a>
-                            <a class="slider__link" href="">Shop Women</a>
-                        </div>
-                    </li>
-                    <li class="slider__item">
-                        <picture>
-                            <source srcset="./image/favorites/favorites-desktop-3@1x.jpg 1x, ./image/favorites/favorites-desktop-3@2x.jpg 2x" media="(min-width: 1440px)">
-                            <source srcset="./image/favorites/favorites-tablet-3@1x.jpg 1x, ./image/favorites/favorites-tablet-3@2x.jpg 2x" media="(min-width: 834px)">
-                            <source srcset="./image/favorites/favorites-mobile-3@1x.jpg 1x, ./image/favorites/favorites-mobile-3@2x.jpg 2x" media="(min-width: 375px)">
-                            <img class="slider__image" src="./image/favorites/favorites-desktop-3@1x.jpg" alt="Wool Runner Mizzle">
-                        </picture>
-                        <h3 class="slider__title">Wool Runner Mizzle</h3>
-                        <div class="slider__wrapper">
-                            <img src="./image/favorites/sun.jpg" alt="sun">
-                            <p class="slider__text">Rain-Ready Sneaker</p>
-                        </div>
-                        <div class="slider__wrapper__link">
-                            <a class="slider__link" href="">Shop Men</a>
-                            <a class="slider__link" href="">Shop Women</a>
-                        </div>
-                    </li>
-                </ul>
+    <div class="favorites__container container">
+        <h2 class="favorites__main-title">Our Favorites</h2>
+        <div class='favorites__wrapper-btn'>
+            <button class='favorites__btn' type='button'>Everyday</button>
+            <button class='favorites__btn' type='button'>Running</button>
+            <button class='favorites__btn' type='button'>Travel</button>
+        </div>
+        <ul class="favorites__list everyday__list">
+            <li class="favorites__item everyday__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-1@1x.jpg 1x, ./image/favorites/favorites-desktop-1@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-1@1x.jpg 1x, ./image/favorites/favorites-tablet-1@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-1@1x.jpg 1x, ./image/favorites/favorites-mobile-1@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image everyday__image" src="./image/favorites/favorites-desktop-1@1x.jpg" alt="Wool Runner" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title everyday__title">Wool Runner</h3>
+                <div class="favorites__wrapper everyday__wrapper">
+                    <img src="./image/favorites/cloud.jpg" alt="cloud">
+                    <p class="favorites__text everyday__text">Cozy Sneaker</p>
+                </div>
+                <div class="favorites__wrapper-link everyday__wrapper__link">
+                    <a class="favorites__link everyday__link btn-ligth" href="">Shop Men</a>
+                    <a class="favorites__link everyday__link btn-ligth" href="">Shop Women</a>
+                </div>
             </li>
-
+            <li class="favorites__item everyday__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-2@1x.jpg 1x, ./image/favorites/favorites-desktop-2@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-2@1x.jpg 1x, ./image/favorites/favorites-tablet-2@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-2@1x.jpg 1x, ./image/favorites/favorites-mobile-2@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image everyday__image" src="./image/favorites/favorites-desktop-2@1x.jpg" alt="Tree Runner" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title everyday__title">Tree Runner</h3>
+                <div class="favorites__wrapper everyday__wrapper">
+                    <img src="./image/favorites/leave.jpg" alt="leave">
+                    <p class="favorites__text everyday__text">Light and Breezy Sneaker</p>
+                </div>
+                <div class="favorites__wrapper-link everyday__wrapper__link">
+                    <a class="favorites__link everyday__link" href="">Shop Men</a>
+                    <a class="favorites__link everyday__link" href="">Shop Women</a>
+                </div>
+            </li>
+            <li class="favorites__item everyday__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-3@1x.jpg 1x, ./image/favorites/favorites-desktop-3@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-3@1x.jpg 1x, ./image/favorites/favorites-tablet-3@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-3@1x.jpg 1x, ./image/favorites/favorites-mobile-3@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image everyday__image" src="./image/favorites/favorites-desktop-3@1x.jpg" alt="Wool Runner Mizzle" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title everyday__title">Wool Runner Mizzle</h3>
+                <div class="favorites__wrapper everyday__wrapper">
+                    <img src="./image/favorites/sun.jpg" alt="sun">
+                    <p class="favorites__text everyday__text">Rain-Ready Sneaker</p>
+                </div>
+                <div class="favorites__wrapper-link everyday__wrapper__link">
+                    <a class="favorites__link everyday__link" href="">Shop Men</a>
+                    <a class="favorites__link everyday__link" href="">Shop Women</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="favorites__list running__list">
+            <li class="favorites__item running__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-1@1x.jpg 1x, ./image/favorites/favorites-desktop-1@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-1@1x.jpg 1x, ./image/favorites/favorites-tablet-1@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-1@1x.jpg 1x, ./image/favorites/favorites-mobile-1@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image running__image" src="./image/favorites/favorites-desktop-1@1x.jpg" alt="Wool Runner" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title running_title">Wool Runner</h3>
+                <div class="favorites__wrapper running__wrapper">
+                    <img src="./image/favorites/cloud.jpg" alt="cloud">
+                    <p class="favorites__text running__text">Cozy Sneaker</p>
+                </div>
+                <div class="favorites__wrapper-link running__wrapper__link">
+                    <a class="favorites__link running__link" href="">Shop Men</a>
+                    <a class="favorites__link running__link" href="">Shop Women</a>
+                </div>
+            </li>
+            <li class="favorites__item running__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-2@1x.jpg 1x, ./image/favorites/favorites-desktop-2@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-2@1x.jpg 1x, ./image/favorites/favorites-tablet-2@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-2@1x.jpg 1x, ./image/favorites/favorites-mobile-2@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image running__image" src="./image/favorites/favorites-desktop-2@1x.jpg" alt="Tree Runner" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title running__title">Tree Runner</h3>
+                <div class="favorites__wrapper running__wrapper">
+                    <img src="./image/favorites/leave.jpg" alt="leave">
+                    <p class="favorites__text running__text">Light and Breezy Sneaker</p>
+                </div>
+                <div class="favorites__wrapper-link everyday__wrapper__link">
+                    <a class="favorites__link running__link" href="">Shop Men</a>
+                    <a class="favorites__link running__link" href="">Shop Women</a>
+                </div>
+            </li>
+            <li class="favorites__item running__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-3@1x.jpg 1x, ./image/favorites/favorites-desktop-3@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-3@1x.jpg 1x, ./image/favorites/favorites-tablet-3@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-3@1x.jpg 1x, ./image/favorites/favorites-mobile-3@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image everyday__image" src="./image/favorites/favorites-desktop-3@1x.jpg" alt="Wool Runner Mizzle" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title running__title">Wool Runner Mizzle</h3>
+                <div class="favorites__wrapper running__wrapper">
+                    <img src="./image/favorites/sun.jpg" alt="sun">
+                    <p class="favorites__text running__text">Rain-Ready Sneaker</p>
+                </div>
+                <div class="favorites__wrapper__link running__wrapper__link">
+                    <a class="favorites__link running__link" href="">Shop Men</a>
+                    <a class="favorites__link running__link" href="">Shop Women</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="favorites__list travel__list">
+            <li class="favorites__item travel__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-1@1x.jpg 1x, ./image/favorites/favorites-desktop-1@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-1@1x.jpg 1x, ./image/favorites/favorites-tablet-1@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-1@1x.jpg 1x, ./image/favorites/favorites-mobile-1@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image everyday__image" src="./image/favorites/favorites-desktop-1@1x.jpg" alt="Wool Runner" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title travel_title">Wool Runner</h3>
+                <div class="favorites__wrapper travel__wrapper">
+                    <img src="./image/favorites/cloud.jpg" alt="cloud">
+                    <p class="favorites__text travel__text">Cozy Sneaker</p>
+                </div>
+                <div class="favorites__wrapper-link travel__wrapper__link">
+                    <a class="favorites__link travel__link" href="">Shop Men</a>
+                    <a class="favorites__link travel__link" href="">Shop Women</a>
+                </div>
+            </li>
+            <li class="favorites__item travel__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-2@1x.jpg 1x, ./image/favorites/favorites-desktop-2@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-2@1x.jpg 1x, ./image/favorites/favorites-tablet-2@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-2@1x.jpg 1x, ./image/favorites/favorites-mobile-2@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image travel__image" src="./image/favorites/favorites-desktop-2@1x.jpg" alt="Tree Runner" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title travel__title">Tree Runner</h3>
+                <div class="favorites__wrapper travel__wrapper">
+                    <img src="./image/favorites/leave.jpg" alt="leave">
+                    <p class="favorites__text travel__text">Light and Breezy Sneaker</p>
+                </div>
+                <div class="favorites__wrapper-link travel__wrapper__link">
+                    <a class="favorites__link travel__link" href="">Shop Men</a>
+                    <a class="favorites__link travel__link" href="">Shop Women</a>
+                </div>
+            </li>
+            <li class="favorites__item travel__item">
+                <picture>
+                    <source srcset="./image/favorites/favorites-desktop-3@1x.jpg 1x, ./image/favorites/favorites-desktop-3@2x.jpg 2x" media="(min-width: 1440px)">
+                    <source srcset="./image/favorites/favorites-tablet-3@1x.jpg 1x, ./image/favorites/favorites-tablet-3@2x.jpg 2x" media="(min-width: 834px)">
+                    <source srcset="./image/favorites/favorites-mobile-3@1x.jpg 1x, ./image/favorites/favorites-mobile-3@2x.jpg 2x" media="(min-width: 375px)">
+                    <img class="favorites__image travel__image" src="./image/favorites/favorites-desktop-3@1x.jpg" alt="Wool Runner Mizzle" width='396' height='396'>
+                </picture>
+                <h3 class="favorites__title travel__title">Wool Runner Mizzle</h3>
+                <div class="favorites__wrapper travel__wrapper">
+                    <img src="./image/favorites/sun.jpg" alt="sun">
+                    <p class="favorites__text travel__text">Rain-Ready Sneaker</p>
+                </div>
+                <div class="favorites__wrapper__link travel__wrapper__link">
+                    <a class="favorites__link travel__link" href="">Shop Men</a>
+                    <a class="favorites__link travel__link" href="">Shop Women</a>
+                </div>
+            </li>
         </ul>
     </div>
 </section>
-<section class="change">
+<!-- <section class="change">
     <picture>
         <source srcset="./image/change/change-desktop@1x.jpg 1x, ./image/change/change-destop@2x.jpg 2x" media="(min-width: 1440px)">
         <source srcset="./image/change/change-tablet@1x.jpg 1x, ./image/change/change-tablet@2x.jpg 2x" media="(min-width: 834px)">
@@ -158,8 +266,8 @@
             <a class="change__link" href="">Shop Women</a>
         </div>
     </div>
-</section>
-<section class="collections">
+</section> -->
+<!-- <section class="collections">
     <div class="collections__container">
         <h2 class="collections__title">Shop The Collections</h2>
         <ul class="collections__list">
@@ -207,8 +315,8 @@
             </button>
         </div>
     </div>
-</section>
-<section class="nature">
+</section> -->
+<!-- <section class="nature">
     <picture>
         <source srcset="./image/nature/nature-desktop@1x.jpg 1x, ./image/nature/nature-desktop@2x.jpg 2x" media="(min-width: 1440px)">
         <source srcset="./image/nature/nature-tablet@1x.jpg 1x, ./image/nature/nature-tablet@2x.jpg 2x" media="(min-width: 834px)">
@@ -220,8 +328,8 @@
             <p class="nature__text">We craft with planet-friendly natural materials, like merino wool and eucalyptus trees, because they're our best chance for a sustainable future.</p>
             <a class="nature__link" href="">See How</a>
     </div>
-</section>
-<section class="arrivals">
+</section> -->
+<!-- <section class="arrivals">
     <div class="arrivals__container">
         <h2 class="arrivals__title">New Arrivals</h2>
         <ul class="arrivals__list">
@@ -269,8 +377,8 @@
             </button>
         </div>
     </div>
-</section>
-<section class="climate">
+</section> -->
+<!-- <section class="climate">
     <picture>
         <source srcset="./image/climate/climate-desktop@1x.jpg 1x, ./image/climate/climate-desktop@2x.jpg 2x" media="(min-width: 1440px)">
         <source srcset="./image/climate/climate-tablet@1x.jpg 1x, ./image/climate/climate-tablet@2x.jpg 2x" media="(min-width: 834px)">
@@ -282,8 +390,8 @@
         <p class="climate__text">We craft with planet-friendly natural materials, like merino wool and eucalyptus trees, because they're our best chance for a sustainable future.</p>
         <a class="climate__link" href="">See How</a>
     </div>
-</section>
-<section class="stories">
+</section> -->
+<!-- <section class="stories">
     <div class="stories__container">
         <h2 class="stories__title">Stories</h2>
         <ul class="stories__list">
@@ -331,8 +439,8 @@
             </button>
         </div>
     </div>
-</section>
-<section class="subscribe">
+</section> -->
+<!-- <section class="subscribe">
     <div class="subscribe__container">
         <h2 class="subscribe__title">Want First Dibs?</h2>
         <p class="subscribe__text">Join our email list and be the first to know about new limited edition products, material innovations, and lots of other fun updates.</p>
@@ -345,9 +453,9 @@
             <a class="subscribe__link"  href="">Privacy Policy and Terms</a>
         </div>
     </div>
-</section>
+</section> -->
 </main>
-<footer class="footer">
+<!-- <footer class="footer">
     <div class="footer__container">
         <div class="navigation__wrapper">
             <ul class="navigation__list">

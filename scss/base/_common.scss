@@ -9,13 +9,13 @@ p {
 }
 
 body{
+  box-sizing: border-box;
   position: relative;
   margin: 0;
 }
 
 img {
   display: block;
-  width: 100%;
   height: auto;
 }
 
