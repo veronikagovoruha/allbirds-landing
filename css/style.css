@@ -328,7 +328,7 @@ ul {
 
 @media screen and (max-width: 834px) {
   .hero__wrapper {
-    left: 30px;
+    left: 20px;
     bottom: 45px;
   }
   .hero__title {
@@ -341,7 +341,7 @@ ul {
 }
 @media screen and (max-width: 375px) {
   .hero__wrapper {
-    left: 20px;
+    left: 10px;
     bottom: 38px;
   }
   .hero__title {
@@ -481,6 +481,20 @@ ul {
 
 .favorites__link:not(:last-child) {
   margin-bottom: 12px;
+}
+
+.change {
+  padding-bottom: 120px;
+}
+
+.change__image {
+  padding-bottom: 48px;
+}
+
+.change__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
