@@ -125,60 +125,27 @@
     margin-bottom: 12px;
 }
 
-.everyday__list {
+@media screen and (max-width: 375px){
+    .favorites__main-title {
+        @include fonts(normal, 700, 28px, 1.3);
+        padding-bottom: 18px;
+    }
+    .favorites__btn:not(:last-child){
+        margin-right: 10px;
+    }
+    .favorites__btn{
+        @include fonts(normal, 400, 12px, 1.1);
+        padding: 10px 20px;
+    }
+    .favorites__image {
+        width: 310px;
+    }
+    .favorites__item:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 36px;
+    }
 }
-.everyday__item {
-}
-.everyday__image {
-}
-.everyday_title {
-}
-.everyday__wrapper {
-}
-.everyday__text {
-}
-.everyday__wrapper__link {
-}
-.everyday__link {
-}
-.everyday__title {
-}
-.running__list {
-}
-.running__item {
-}
-.running__image {
-}
-.running_title {
-}
-.running__wrapper {
-}
-.running__text {
-}
-.running__wrapper__link {
-}
-.running__link {
-}
-.running__title {
-}
-.travel__list {
-}
-.travel__item {
-}
-.travel_title {
-}
-.travel__wrapper {
-}
-.travel__text {
-}
-.travel__wrapper__link {
-}
-.travel__link {
-}
-.travel__image {
-}
-.travel__title {
-}
+
 
 
 
