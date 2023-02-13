@@ -86,11 +86,11 @@
     <div class="favorites__container container">
         <h2 class="favorites__main-title">Our Favorites</h2>
         <div class='favorites__wrapper-btn'>
-            <button class='favorites__btn' type='button'>Everyday</button>
-            <button class='favorites__btn' type='button'>Running</button>
-            <button class='favorites__btn' type='button'>Travel</button>
+            <button class='favorites__btn btn-everyday' type='button'>Everyday</button>
+            <button class='favorites__btn btn-running' type='button'>Running</button>
+            <button class='favorites__btn btn-travel' type='button'>Travel</button>
         </div>
-        <ul class="favorites__list everyday__list">
+        <ul class="favorites__list everyday__list visually">
             <li class="favorites__item everyday__item">
                 <div class='favorites__wrapper-block'>
                     <picture>
@@ -155,7 +155,7 @@
                 </div>
             </li>
         </ul>
-        <ul class="favorites__list running__list visually-hidden visually">
+        <ul class="favorites__list running__list">
             <li class="favorites__item running__item">
                 <div class='favorites__wrapper-block'>
                     <picture>
@@ -220,7 +220,7 @@
                 </div>
             </li>
         </ul>
-        <ul class="favorites__list travel__list visually-hidden">
+        <ul class="favorites__list travel__list">
             <li class="favorites__item travel__item">
                 <div class='favorites__wrapper-block'>
                     <picture>
@@ -350,7 +350,7 @@
         </ul>
         <div class="btn__wrapper">
             <button class="collections__btn collections__btn-right">
-                <svg class="collections__svg" width='48' height='48'>
+                <svg class="collections__svg" width='48'>
                     <use href="./image/icon/icon.svg#icon-collection-rigth"></use>
                 </svg>
             </button>
@@ -568,6 +568,5 @@
     </div>
 </footer> -->
 </body>
+<script src='./index.js'></script>
 </html>
-
-<!--font-family: 'Roboto', sans-serif;-->

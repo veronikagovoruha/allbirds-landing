@@ -1,3 +1,4 @@
+
 .favorites {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -33,6 +34,8 @@
     border: none;
     background-color: transparent;
     padding: 10px 30px;
+
+    cursor: pointer;
 }
 
 .favorites__btn:not(:last-child){
@@ -44,12 +47,15 @@
     margin-bottom: 18px;
 }
 .favorites__list {
-    display: flex;
-    justify-content: center;
-
-    // border-top: 2px solid #D3D4D5;
-    padding-top: 34px;
+    display: none;
 }
+.visually {
+    display: flex;
+      justify-content: center;
+  
+      // border-top: 2px solid #D3D4D5;
+      padding-top: 34px;
+  }
 .favorites__wrapper-btn::after{
     content: '';
     border: 2px solid #D3D4D5;
@@ -118,7 +124,6 @@
 }
 
 .everyday__list {
-
 }
 .everyday__item {
 }
