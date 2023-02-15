@@ -493,6 +493,16 @@ ul, li {
     gap: 16px;
     padding-top: 16px;
   }
+  .favorites__btn:not(:last-child) {
+    margin-right: 10px;
+  }
+  .favorites__btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    padding: 10px 16px;
+  }
 }
 @media screen and (max-width: 320px) {
   .favorites {
@@ -514,7 +524,7 @@ ul, li {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.1;
-    padding: 10px 16px;
+    padding: 10px 12px;
   }
   .favorites__wrapper-option {
     padding-right: 0;

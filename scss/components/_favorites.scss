@@ -152,9 +152,14 @@
     .visually{
         grid-template-columns: 1fr;
         gap: 16px;
-        // grid-column-gap: 16px;
-        // grid-row-gap: 16px;
         padding-top: 16px;
+    }
+    .favorites__btn:not(:last-child){
+        margin-right: 10px;
+    }
+    .favorites__btn{
+        @include fonts(normal, 400, 12px, 1.1);
+        padding: 10px 16px;
     }
 }
 
@@ -163,11 +168,6 @@
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    // .visually{
-    //     grid-template-columns: 1fr;
-    //     grid-column-gap: 16px;
-    //     padding-top: 16px;
-    // }
     .favorites__main-title {
         @include fonts(normal, 700, 28px, 1.3);
         padding-bottom: 18px;
@@ -177,7 +177,7 @@
     }
     .favorites__btn{
         @include fonts(normal, 400, 12px, 1.1);
-        padding: 10px 16px;
+        padding: 10px 12px;
     }
 
     .favorites__wrapper-option{
