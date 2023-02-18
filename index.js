@@ -40,3 +40,41 @@ function addClassToRtavel(){
 everedayBtnEl.addEventListener('click', addClassToEveryday);
 runningBtnEl.addEventListener('click', addClassToRunning);
 travelBtnEl.addEventListener('click', addClassToRtavel);
+
+$('.slider__list').slick({
+    dots: false,
+    infinite: false,
+    arrows:true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+
+    prevArrow: ('.collections__btn-right'),
+    nextArrow: ('.collections__btn-left'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+            dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
