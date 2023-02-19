@@ -10,20 +10,23 @@
     letter-spacing: 0.5px;
     margin-bottom: 24px;
     color: #212A2F;
-    padding-left: 72px;
 }
 .collections__list {
     display: flex;
     justify-content: center;
+    margin-right: -24px;
 }
 .collections__item {
+    width: 396px !important;
     display: flex;
     flex-direction: column;
-}
-.collections__item:not(:last-child){
     margin-right: 24px;
 }
+
 .collections__image {
+    width: 100%;
+    max-width: 396px;
+    min-width: 315px;
     margin-bottom: 17px;
 }
 .collections__subtitle {
@@ -55,11 +58,12 @@
 .collections__btn-right{
     position: absolute;
     top: 40%;
+    left: -24px;
 }
 .collections__btn-left{
     position: absolute;
     bottom: 50%;
-    right: 1%;
+    right: -24px;
 }
 .collections__svg {
     transform: rotate(40deg);
