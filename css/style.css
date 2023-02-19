@@ -832,5 +832,63 @@ ul, li {
     padding-bottom: 40px;
   }
 }
+.subscribe {
+  padding-bottom: 48px;
+}
+
+.subscribe__title {
+  text-align: center;
+  padding-bottom: 34px;
+}
+
+.subscribe__text {
+  text-align: center;
+  max-width: 832px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.subscribe__input {
+  width: 100%;
+  max-width: 520px;
+  border: none;
+  border-bottom: 2px solid #212A2F;
+  padding-left: 66px;
+  padding-bottom: 15px;
+  color: #212A2F;
+  margin-right: 12px;
+}
+
+.subscribe__input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.22);
+}
+
+.subscribe__btn {
+  padding: 15px 0;
+  width: 111px;
+}
+
+.subscribe__wrapper {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  color: #74797C;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
