@@ -1,0 +1,35 @@
+.nature{
+    padding-bottom: 120px;
+}
+.nature__title{
+    text-align: center;
+}
+.nature__text{
+    max-width: 655px;
+    margin: 0 auto;
+    text-align: center;
+}
+.nature__link{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 13px 0;
+    width: 380px;
+}
+
+@media screen and (max-width: 767.99px){
+    .nature {
+        padding-bottom: 60px;
+    }
+
+    .nature__link{
+        width: 310px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .nature {
+        padding-bottom: 40px;
+    }
+    
+}

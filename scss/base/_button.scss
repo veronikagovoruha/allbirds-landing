@@ -1,5 +1,6 @@
 .btn-ligth{
-    @include fonts(normal, 700, 16px, 1.14);
+    font-family: 'Roboto', serif;
+    @include fonts(normal, 700, 14px, 1.1);
     letter-spacing: 2px;
     text-transform: uppercase;
 
@@ -10,7 +11,8 @@
 }
 
 .btn-dark{
-    @include fonts(normal, 700, 16px, 1.14);
+    font-family: 'Roboto', serif;
+    @include fonts(normal, 700, 14px, 1.1);
     letter-spacing: 2px;
     text-transform: uppercase;
 

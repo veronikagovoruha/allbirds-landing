@@ -48,9 +48,12 @@ $(function(){
         speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
+        variableWidth: true,
     
         prevArrow: ('.collections__btn-right'),
         nextArrow: ('.collections__btn-left'),
+        prevArrow: ('.arrivals__btn-right'),
+        nextArrow: ('.arrivals__btn-left'),
         responsive: [
           {
             breakpoint: 1024,
