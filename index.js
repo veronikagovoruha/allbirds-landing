@@ -69,7 +69,7 @@ $(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 688,
             settings: {
               dots: true,
               slidesToShow: 1,
@@ -106,7 +106,7 @@ $(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 688,
             settings: {
               dots: true,
               slidesToShow: 1,
@@ -143,7 +143,7 @@ $(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 688,
             settings: {
               dots: true,
               slidesToShow: 1,
