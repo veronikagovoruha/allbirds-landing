@@ -588,6 +588,7 @@ ul, li {
 }
 
 .change__title {
+  text-align: center;
   padding-bottom: 24px;
 }
 
@@ -631,6 +632,7 @@ ul, li {
 
 .collections__title {
   padding-bottom: 24px;
+  margin-left: 10px;
 }
 
 .collections__list {
@@ -741,6 +743,7 @@ ul, li {
 
 .arrivals__title {
   padding-bottom: 24px;
+  margin-left: 10px;
 }
 
 .arrivals__list {
@@ -848,6 +851,61 @@ ul, li {
 @media screen and (max-width: 320px) {
   .climate {
     padding-bottom: 40px;
+  }
+}
+.stories {
+  padding-bottom: 120px;
+}
+
+.stories__container {
+  position: relative;
+}
+
+.stories__title {
+  margin-left: 10px;
+  padding-bottom: 24px;
+}
+
+.stories__list {
+  display: flex;
+  justify-content: center;
+}
+
+.stories__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+}
+
+.stories-wrapper-text {
+  max-width: 330px;
+  margin-left: 18px;
+}
+
+.stories__image {
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.stories__subtitle {
+  margin-bottom: 18px;
+}
+
+.stories__btn-right {
+  position: absolute;
+  top: 45%;
+  left: -26px;
+}
+
+.stories__btn-left {
+  position: absolute;
+  bottom: 48%;
+  right: -26px;
+}
+
+@media screen and (max-width: 1336px) {
+  .stories__wrapper {
+    display: none;
   }
 }
 .subscribe {
