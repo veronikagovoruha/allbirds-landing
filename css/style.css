@@ -76,9 +76,9 @@ ul, li {
   .title {
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 1.3;
-    padding-bottom: 18px;
+    padding-bottom: 8px;
   }
   .subtitle {
     font-style: normal;
@@ -613,6 +613,12 @@ ul, li {
   margin-right: 24px;
 }
 
+@media screen and (max-width: 767.99px) {
+  .change {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (max-width: 375px) {
   .change__wrapper__link {
     flex-direction: column;
@@ -620,6 +626,12 @@ ul, li {
   .change__link:not(:last-child) {
     margin-right: 0;
     margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .change {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .collections {
@@ -695,6 +707,26 @@ ul, li {
 @media screen and (max-width: 1336px) {
   .btn__wrapper {
     display: none;
+  }
+}
+@media screen and (max-width: 767.99px) {
+  .collections {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .collections {
+    padding-bottom: 40px;
+  }
+  .collections__wrapper {
+    margin: 0 auto;
+  }
+  .collections__subtitle {
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  .collections__text {
+    text-align: center;
   }
 }
 .nature {
@@ -816,6 +848,16 @@ ul, li {
   .arrivals {
     padding-bottom: 40px;
   }
+  .arrivals__wrapper-text {
+    margin: 0 auto;
+  }
+  .arrivals__subtitle {
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  .arrivals__text {
+    text-align: center;
+  }
 }
 .climate {
   padding-bottom: 120px;
@@ -888,7 +930,7 @@ ul, li {
 }
 
 .stories__subtitle {
-  margin-bottom: 18px;
+  padding-bottom: 18px;
 }
 
 .stories__btn-right {
@@ -906,6 +948,26 @@ ul, li {
 @media screen and (max-width: 1336px) {
   .stories__wrapper {
     display: none;
+  }
+}
+@media screen and (max-width: 767.99px) {
+  .stories {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .stories {
+    padding-bottom: 40px;
+  }
+  .stories-wrapper-text {
+    margin: 0 auto;
+  }
+  .stories__subtitle {
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  .stories__text {
+    text-align: center;
   }
 }
 .subscribe {

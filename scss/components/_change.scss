@@ -33,7 +33,12 @@
 .change__link:not(:last-child){
     margin-right: 24px;
 }
-
+@media screen and (max-width: 767.99px){
+    .change {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
 @media screen and (max-width: 375px){
     .change__wrapper__link {
         flex-direction: column;
@@ -41,5 +46,12 @@
     .change__link:not(:last-child){
         margin-right: 0;
         margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .change {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }

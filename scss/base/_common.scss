@@ -56,16 +56,10 @@ ul, li{
   width: 100%;
 }
 
-
-@media screen and (max-width: 834px){
-  .title{
-  }
-}
-
 @media screen and (max-width: 320px){
   .title{
-    @include fonts(normal, 700, 28px, 1.3);
-    padding-bottom: 18px;
+    @include fonts(normal, 700, 18px, 1.3);
+    padding-bottom: 8px;
   }
 
   .subtitle{

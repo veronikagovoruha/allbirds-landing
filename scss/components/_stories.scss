@@ -28,7 +28,7 @@
     margin-bottom: 17px;
 }
 .stories__subtitle {
-    margin-bottom: 18px;
+    padding-bottom: 18px;
 }
 .stories__text {
 }
@@ -46,5 +46,27 @@
 @media screen and (max-width: 1336px){
     .stories__wrapper{
         display: none;
+    }
+}
+
+@media screen and (max-width: 767.99px){
+    .stories {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .stories {
+        padding-bottom: 40px;
+    }
+    .stories-wrapper-text{
+        margin: 0 auto;
+    }
+    .stories__subtitle{
+        padding-bottom: 8px;
+        text-align: center;
+    }
+    .stories__text{
+        text-align: center;
     }
 }

@@ -63,3 +63,26 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 767.99px){
+    .collections {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .collections {
+        padding-bottom: 40px;
+    }
+    .collections__wrapper{
+        margin: 0 auto;
+    }
+    .collections__subtitle{
+        padding-bottom: 8px;
+        text-align: center;
+    }
+    .collections__text{
+        text-align: center;
+    }
+}
+
