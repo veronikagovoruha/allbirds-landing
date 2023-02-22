@@ -42,7 +42,7 @@
 .subscribe__wrapper {
     display: flex;
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', serif;
     @include fonts(normal, 400, 14px, 1);
     text-align: center;
     color: #74797C;
@@ -50,8 +50,13 @@
     justify-content: center;
 
 }
-.subscribe__note {
-    
-}
-.subscribe__link {
+@media screen and (max-width: 447px){
+    .subscribe__btn{
+        padding: 8px 0;
+        width: 55px;
+    }
+
+    .subscribe__btn {
+        @include fonts(normal, 400, 7px, 1);   
+    }
 }

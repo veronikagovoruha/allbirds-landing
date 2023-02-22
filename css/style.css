@@ -1019,7 +1019,7 @@ ul, li {
 
 .subscribe__wrapper {
   display: flex;
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1029,6 +1029,18 @@ ul, li {
   justify-content: center;
 }
 
+@media screen and (max-width: 447px) {
+  .subscribe__btn {
+    padding: 8px 0;
+    width: 55px;
+  }
+  .subscribe__btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 1;
+  }
+}
 .footer {
   background-color: #212A2F;
   color: #ffffff;
