@@ -90,7 +90,7 @@ ul, li {
 }
 .container {
   width: 100%;
-  max-width: 1410px;
+  max-width: 1266px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 15px;
@@ -636,26 +636,30 @@ ul, li {
 .collections__list {
   display: flex;
   justify-content: center;
-  margin-right: -24px;
 }
 
 .collections__item {
-  width: 396px !important;
   display: flex;
   flex-direction: column;
-  margin-right: 24px;
+}
+
+.collections__item-wrapper {
+  padding: 0 12px;
 }
 
 .collections__image {
   width: 100%;
-  max-width: 396px;
-  min-width: 315px;
   margin-bottom: 17px;
 }
 
 .collections__subtitle {
   display: block;
   margin-bottom: 10px;
+}
+
+.collections__wrapper {
+  max-width: 357px;
+  margin-left: 18px;
 }
 
 .collections__btn {
@@ -671,13 +675,13 @@ ul, li {
 .collections__btn-right {
   position: absolute;
   top: 40%;
-  left: -24px;
+  left: -26px;
 }
 
 .collections__btn-left {
   position: absolute;
-  bottom: 50%;
-  right: -24px;
+  bottom: 55%;
+  right: -26px;
 }
 
 .collections__svg {
@@ -686,6 +690,11 @@ ul, li {
   height: 0.7em;
 }
 
+@media screen and (max-width: 1336px) {
+  .btn__wrapper {
+    display: none;
+  }
+}
 .nature {
   padding-bottom: 120px;
 }
@@ -735,17 +744,21 @@ ul, li {
 }
 
 .arrivals__list {
-  margin-right: -24px;
+  display: flex;
+  justify-content: center;
 }
 
 .arrivals__item {
-  margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrivals__item-wrapper {
+  padding: 0 12px;
 }
 
 .arrivals__image {
   width: 100%;
-  max-width: 396px;
-  min-width: 315px;
   background-color: #F5F5F5;
   margin-bottom: 17px;
 }
@@ -770,8 +783,8 @@ ul, li {
 
 .arrivals__btn-right {
   position: absolute;
-  top: 50%;
-  left: -5px;
+  top: 45%;
+  left: -26px;
 }
 
 .arrivals__svg {
@@ -782,10 +795,15 @@ ul, li {
 
 .arrivals__btn-left {
   position: absolute;
-  bottom: 40%;
-  right: -5px;
+  bottom: 48%;
+  right: -26px;
 }
 
+@media screen and (max-width: 1336px) {
+  .arrivals__wrapper {
+    display: none;
+  }
+}
 @media screen and (max-width: 767.99px) {
   .arrivals {
     padding-bottom: 60px;
@@ -889,6 +907,13 @@ ul, li {
   text-align: center;
   color: #74797C;
   justify-content: center;
+}
+
+.footer {
+  background-color: #212A2F;
+  color: #ffffff;
+  padding-top: 72px;
+  padding-bottom: 90px;
 }
 
 /*# sourceMappingURL=style.css.map */

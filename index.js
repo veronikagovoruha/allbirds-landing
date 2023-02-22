@@ -42,33 +42,67 @@ runningBtnEl.addEventListener('click', addClassToRunning);
 travelBtnEl.addEventListener('click', addClassToRtavel);
 
 $(function(){
-    $('.slider__list').slick({
+    $('.slider__list-collections').slick({
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        variableWidth: true,
     
         prevArrow: ('.collections__btn-right'),
         nextArrow: ('.collections__btn-left'),
+        responsive: [
+          {
+            breakpoint: 1336,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              dots:true,
+            }
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots:true,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              dots: true,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      $('.slider__list-arrivals').slick({
+        dots: false,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+
         prevArrow: ('.arrivals__btn-right'),
         nextArrow: ('.arrivals__btn-left'),
         responsive: [
           {
-            breakpoint: 1024,
+            breakpoint: 1336,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
+              slidesToScroll: 1,
+              dots:true,
             }
           },
           {
-            breakpoint: 600,
+            breakpoint: 1024,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
+              slidesToScroll: 1,
+              dots: true
             }
           },
           {

@@ -8,18 +8,23 @@
 .arrivals__title{
     padding-bottom: 24px;
 }
+
 .arrivals__list{
-    margin-right: -24px;
+    display: flex;
+    justify-content: center;
 }
 
-.arrivals__item{
-    margin-right: 24px;
+.arrivals__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrivals__item-wrapper{
+    padding: 0 12px;
 }
 
 .arrivals__image{
     width: 100%;
-    max-width: 396px;
-    min-width: 315px;
     background-color: #F5F5F5;
     margin-bottom: 17px;
 }
@@ -43,8 +48,8 @@
 }
 .arrivals__btn-right {
     position: absolute;
-    top: 50%;
-    left: -5px;
+    top: 45%;
+    left: -26px;
 }
 .arrivals__svg {
     transform: rotate(40deg);
@@ -53,10 +58,15 @@
 }
 .arrivals__btn-left {
     position: absolute;
-    bottom: 40%;
-    right: -5px;
+    bottom: 48%;
+    right: -26px;
 }
 
+@media screen and (max-width: 1336px){
+    .arrivals__wrapper{
+        display: none;
+    }
+}
 @media screen and (max-width: 767.99px){
     .arrivals {
         padding-bottom: 60px;

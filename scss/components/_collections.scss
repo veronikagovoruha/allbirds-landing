@@ -10,24 +10,27 @@
 .collections__list {
     display: flex;
     justify-content: center;
-    margin-right: -24px;
 }
 .collections__item {
-    width: 396px !important;
     display: flex;
     flex-direction: column;
-    margin-right: 24px;
+}
+
+.collections__item-wrapper{
+    padding:0 12px;
 }
 
 .collections__image {
     width: 100%;
-    max-width: 396px;
-    min-width: 315px;
     margin-bottom: 17px;
 }
 .collections__subtitle {
     display: block;
     margin-bottom: 10px;
+}
+.collections__wrapper{
+    max-width: 357px;
+    margin-left: 18px;
 }
 .collections__btn {
     width: 2.555em;
@@ -41,15 +44,21 @@
 .collections__btn-right{
     position: absolute;
     top: 40%;
-    left: -24px;
+    left: -26px;
 }
 .collections__btn-left{
     position: absolute;
-    bottom: 50%;
-    right: -24px;
+    bottom: 55%;
+    right: -26px;
 }
 .collections__svg {
     transform: rotate(40deg);
     width: 0.59em;
     height: 0.7em;
+}
+
+@media screen and (max-width: 1336px){
+    .btn__wrapper{
+        display: none;
+    }
 }
