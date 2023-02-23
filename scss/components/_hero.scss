@@ -52,6 +52,16 @@
     }
 }
 
+@media screen and (max-width: 415px){
+    .hero__wrapper__link {
+        flex-direction: column;
+    }
+    .hero__link:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}
+
 @media screen and (max-width: 375px){
     .hero__wrapper {
         left: 10px;
@@ -62,14 +72,6 @@
     }
 
     .hero__subtitle {
-        margin-bottom: 16px;
-    }
-    .hero__wrapper__link {
-        flex-direction: column;
-    }
-
-    .hero__link:not(:last-child){
-        margin-right: 0;
         margin-bottom: 16px;
     }
 }
