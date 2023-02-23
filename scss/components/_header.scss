@@ -17,8 +17,6 @@
     display: flex;
 }
 
-.nav__item {
-}
 .nav__item:not(:last-child) {
     margin-right: 36px;
 }
@@ -26,7 +24,10 @@
     @include fonts();
     text-transform: uppercase;
 }
-.logo__link {
+.nav__link:hover,
+.nav__link:focus{
+  opacity: .6;
+  transition: all ease 200ms;
 }
 .logo__img {
     width: 120px;
@@ -50,6 +51,11 @@
 .header__link {
     @include fonts();
     text-transform: uppercase;
+}
+.header__link:hover,
+.header__link:focus{
+  opacity: .6;
+  transition: all ease 200ms;
 }
 
 @media screen and (max-width: 767.98px) {
