@@ -14,7 +14,9 @@
     display: flex;
     justify-content: center;
 }
-
+.arrivals__wrapper-text{
+    margin-left: 18px;
+}
 .arrivals__item {
     display: flex;
     flex-direction: column;
@@ -33,10 +35,13 @@
     margin-left: 18px;
 }
 .arrivals__subtitle{
+    display: inline-block;
     margin-bottom: 6px;
 }
-.arrivals__text{
-
+.arrivals__subtitle:hover,
+.arrivals__subtitle:focus{
+    opacity: .8;
+    transition: all ease 200ms;
 }
 .arrivals__btn {
     width: 2.555em;

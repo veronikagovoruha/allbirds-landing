@@ -123,6 +123,14 @@ ul, li {
   border-radius: 2px;
 }
 
+.btn-ligth:hover,
+.btn-ligth:focus,
+.btn-dark:hover,
+.btn-dark:focus {
+  opacity: 0.89;
+  transition: all ease 200ms;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -472,22 +480,30 @@ ul, li {
 }
 
 .favorites__title {
+  display: inline-block;
   position: relative;
   margin-bottom: 22px;
 }
 
-.favorites__title::after {
+.favorites__title:hover,
+.favorites__title:focus {
+  opacity: 0.8;
+  transition: all ease 200ms;
+}
+
+.favorites__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.favorites__wrapper::before {
   content: "";
   position: absolute;
   width: 100%;
   border: 1px solid #D3D4D5;
   left: 0;
-  top: 35px;
-}
-
-.favorites__wrapper {
-  display: flex;
-  align-items: center;
+  top: -6px;
 }
 
 .favorites__text {
@@ -673,6 +689,12 @@ ul, li {
   margin-bottom: 10px;
 }
 
+.collections__subtitle:hover,
+.collections__subtitle:focus {
+  opacity: 0.8;
+  transition: all ease 200ms;
+}
+
 .collections__wrapper {
   max-width: 357px;
   margin-left: 18px;
@@ -785,6 +807,10 @@ ul, li {
   justify-content: center;
 }
 
+.arrivals__wrapper-text {
+  margin-left: 18px;
+}
+
 .arrivals__item {
   display: flex;
   flex-direction: column;
@@ -805,7 +831,14 @@ ul, li {
 }
 
 .arrivals__subtitle {
+  display: inline-block;
   margin-bottom: 6px;
+}
+
+.arrivals__subtitle:hover,
+.arrivals__subtitle:focus {
+  opacity: 0.8;
+  transition: all ease 200ms;
 }
 
 .arrivals__btn {
@@ -932,7 +965,14 @@ ul, li {
 }
 
 .stories__subtitle {
+  display: inline-block;
   padding-bottom: 18px;
+}
+
+.stories__subtitle:hover,
+.stories__subtitle:focus {
+  opacity: 0.8;
+  transition: all ease 200ms;
 }
 
 .stories__btn-right {
@@ -986,6 +1026,16 @@ ul, li {
   max-width: 832px;
   margin: 0 auto;
   padding-bottom: 50px;
+}
+
+.subscribe__note {
+  padding-right: 15px;
+}
+
+.subscribe__link:hover,
+.subscribe__link:focus {
+  opacity: 0.8;
+  transition: all ease 200ms;
 }
 
 .subscribe__form {
@@ -1083,6 +1133,12 @@ ul, li {
 
 .navigation__item:not(:last-child) {
   padding-bottom: 16px;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  opacity: 0.7;
+  transition: all ease 200ms;
 }
 
 .follow__container {

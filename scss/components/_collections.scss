@@ -29,6 +29,11 @@
     display: block;
     margin-bottom: 10px;
 }
+.collections__subtitle:hover,
+.collections__subtitle:focus{
+    opacity: .8;
+    transition: all ease 200ms;
+}
 .collections__wrapper{
     max-width: 357px;
     margin-left: 18px;

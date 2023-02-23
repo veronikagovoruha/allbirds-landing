@@ -66,22 +66,30 @@
     padding-left: 30px;
 }
 .favorites__title {
+    display: inline-block;
     position: relative;
     margin-bottom: 22px;
 }
 
-.favorites__title::after{
+.favorites__title:hover,
+.favorites__title:focus{
+    opacity: .8;
+    transition: all ease 200ms;
+}
+
+.favorites__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.favorites__wrapper::before{
     content: '';
     position: absolute;
     width: 100%;
     border: 1px solid #D3D4D5;
     left: 0;
-    top: 35px;
-}
-
-.favorites__wrapper {
-    display: flex;
-    align-items: center;
+    top: -6px;
 }
 
 .favorites__text{

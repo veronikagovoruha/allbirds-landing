@@ -21,3 +21,11 @@
     border: 2px solid #212A2F;
     border-radius: 2px;
 }
+
+.btn-ligth:hover,
+.btn-ligth:focus,
+.btn-dark:hover,
+.btn-dark:focus{
+    opacity: .89;
+    transition: all ease 200ms;
+}

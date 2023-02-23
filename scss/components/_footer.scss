@@ -35,7 +35,10 @@
 .navigation__item:not(:last-child){
     padding-bottom: 16px;
 }
-.navigation__link {
+.navigation__link:hover,
+.navigation__link:focus{
+    opacity: .7;
+    transition: all ease 200ms;
 }
 .follow__container {
     display: flex;

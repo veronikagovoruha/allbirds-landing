@@ -28,9 +28,13 @@
     margin-bottom: 17px;
 }
 .stories__subtitle {
+    display: inline-block;
     padding-bottom: 18px;
 }
-.stories__text {
+.stories__subtitle:hover,
+.stories__subtitle:focus{
+    opacity: .8;
+    transition: all ease 200ms;
 }
 .stories__btn-right {
     position: absolute;

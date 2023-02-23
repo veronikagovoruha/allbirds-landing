@@ -1,8 +1,6 @@
 .subscribe {
     padding-bottom: 48px;
 }
-.subscribe__container {
-}
 .subscribe__title {
     text-align: center;
     padding-bottom: 34px;
@@ -12,6 +10,14 @@
     max-width: 832px;
     margin: 0 auto;
     padding-bottom: 50px;
+}
+.subscribe__note{
+    padding-right: 15px;
+}
+.subscribe__link:hover,
+.subscribe__link:focus{
+    opacity: .8;
+    transition: all ease 200ms;
 }
 .subscribe__form {
     display: flex;
